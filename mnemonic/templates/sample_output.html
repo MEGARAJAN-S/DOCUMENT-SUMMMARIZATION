@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sample Output</title>
+    <style>
+
+        :root{
+            --gradient: linear-gradient(45deg, #050f1f, #101636, #1c123a,#24133b, #3c1646,#461d50);
+        }
+
+        body{
+            width: 100%;
+            background-image: var(--gradient);
+            background-size: 400%;
+            padding: 10px;
+            min-height: 109vh;
+            z-index: -100;
+            animation: bg-animation 5s infinite alternate;
+            color:whitesmoke;
+        }
+
+
+
+        @keyframes bg-animation{
+            0%{
+                background-position: left;
+            }
+            100%{
+                background-position: right;
+            }
+        }
+
+        h1 {
+            text-align: center;
+            text-shadow: 2px 2px 5px grey;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color:aliceblue;
+        }
+
+    </style>
+</head>
+<body>
+<b><h1>SUMMARY</h1></b><br>
+<h3>{{ text_summary }}</h3>
+</body>
+</html>

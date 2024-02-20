@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>File List</title>
+    <style>
+        body{
+            background-color: skyblue;
+            padding-left: 50px;
+            padding-top: 20px;
+            color: whitesmoke;
+
+
+            font-size: 23px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        u1{
+        color:white;
+        }
+    </style>
+</head>
+<body>
+
+  <h2>Uploaded Files</h2>
+  <u1>
+    {% for file in files %}<br>
+      <li><a href="{{ file.file.url }}" style="text-decoration:none">{{ file.description }}</a> </li><br>
+    {% endfor %}<br>
+  </u1>
+</body>
+</html>

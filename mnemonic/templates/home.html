@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Project</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      box-sizing: border-box;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #f5f5f5;
+    }
+    .nav-items {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #f5f5f5;
+      margin-right: 20px;
+    }
+    .nav-items a {
+      text-decoration: none;
+      color: #000;
+      padding: 35px 20px;
+    }
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #302f49;
+      padding: 40px 80px;
+    }
+    .footer .copy {
+      color: #fff;
+    }
+    .bottom-links {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 40px 0;
+    }
+    .bottom-links .links {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 40px;
+    }
+    .bottom-links .links span {
+      font-size: 20px;
+      color: #fff;
+      text-transform: uppercase;
+      margin: 10px 0;
+    }
+
+    .bottom-links .links a {
+      text-decoration: none;
+      color: #a1a1a1;
+      padding: 10px 20px;
+    }
+    Body {
+  font-family: Calibri, Helvetica, sans-serif;
+  background-color: #302f49;
+}
+button {
+       background-color: midnightblue;
+       width: 100%;
+        color: white;
+        padding: 15px;
+        margin: 10px 0px;
+        border: none;
+        cursor: pointer;
+         }
+ form {
+        border: 3px solid #f1f1f1;
+    }
+ input[type=text], input[type=password] {
+        width: 100%;
+        margin: 8px 0;
+        padding: 12px 20px;
+        display: inline-block;
+        border: 2px solid green;
+        box-sizing: border-box;
+    }
+ button:hover {
+        opacity: 0.7;
+    }
+  .cancelbtn {
+        width: auto;
+        padding: 10px 18px;
+        margin: 10px 5px;
+    }
+
+
+ .container {
+        padding: 25px;
+        background-color: ghostwhite;
+    }
+  center{
+    color: slateblue;
+  }
+
+  h1{
+    color: midnightblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: justify;
+  }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <h1>AI Powered Legal Assistant</h1>
+    <h1 style="font-family: cursive;"></h1>
+    <nav class="nav-items">
+      <a href="upload">Home</a>
+      <a href="sign.html">Signup</a>
+    </nav>
+  </header>
+  <center> <h2> Login Form </h2> </center>
+
+
+      <form method = "POST">
+          <div class="container">
+              <label>Username : </label>
+
+              <input type="text" id="email" placeholder="Enter Username" name="username" required>
+              <label>Password : </label>
+              <input type="password" id="pass" placeholder="Enter Password" name="password" required>
+              <input type="checkbox" id="ch" required>
+              <label>Remember Username</label>
+              <button id="ib" onclick="sayHello()" >Log in</button> <br>
+
+              <button type="button" class="cancelbtn"> Cancel</button>
+              Forgot <a href="#">Username or Password? </a>
+          </div>
+      </form>
+<script>
+ </script>
+  <footer class="footer">
+    <div class="copy">&copy; Copyrights AI Assistant</div>
+    <div class="bottom-links">
+      <div class="links">
+        <span>More Info</span>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="links">
+        <span>Social Links</span>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

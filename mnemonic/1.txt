@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Login Page </title>
+<style>
+Body {
+  font-family: Calibri, Helvetica, sans-serif;
+  background-color: yellow;
+}
+button {
+       background-color: #4CAF50;
+       width: 100%;
+        color: indigo;
+        padding: 15px;
+        margin: 10px 0px;
+        border: none;
+        cursor: pointer;
+         }
+ form {
+        border: 3px solid #f1f1f1;
+    }
+ input[type=text], input[type=password] {
+        width: 100%;
+        margin: 8px 0;
+        padding: 12px 20px;
+        display: inline-block;
+        border: 2px solid green;
+        box-sizing: border-box;
+    }
+ button:hover {
+        opacity: 0.7;
+    }
+  .cancelbtn {
+        width: auto;
+        padding: 10px 18px;
+        margin: 10px 5px;
+    }
+
+
+ .container {
+        padding: 25px;
+        background-color: orange;
+    }
+</style>
+</head>
+<body>
+    <center> <h1> Student Login Form </h1> </center>
+     <center> <h2> Welcome to MneMonic 	&#128515; </h2> </center>
+     <span style='font-size:20px;'>&#9997;</span>
+     <a href="notes.com">notes</a>
+     <span style='font-size:20px;'>&#128196;</span>
+     <a href="prvqp.com">previous yr qp</a>
+     <span style='font-size:20px;'>&#128198;</span>
+     <a href="reminder.com">reminder</a>
+     <span style='font-size:20px;'>&#10067;</span>
+     <a href="queries.com">queries</a>
+    <form method = "POST">
+        {% csrf_token %}
+        <div class="container">
+            <label>email id or phone number : </label>
+            <input type="text" placeholder="Enter Username" name="username" required>
+            <label>Password : </label>
+            <input type="password" placeholder="Enter Password" name="password" required>
+            <button type="submit">Login</button>
+            <input type="checkbox" checked="checked"> Remember me
+            <button type="button" class="cancelbtn"> Cancel</button>
+            Forgot <a href="#"> password? </a>
+        </div>
+    </form>
+</body>
+</html>
